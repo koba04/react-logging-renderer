@@ -1,0 +1,21 @@
+{
+  "name": "react-logging-renderer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel-node test/index.js"
+  },
+  "keywords": [],
+  "author": "koba04",
+  "license": "MIT",
+  "dependencies": {
+    "react-reconciler": "^0.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/node": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "react": "^16.2.0"
+  }
+}
