@@ -9,6 +9,9 @@ const ReactLogging = {
     }
     LoggingRenderer.updateContainer(element, root, null, callback);
   },
+  flushLogs() {
+    LoggingRenderer.flush();
+  }
 };
 
 module.exports = ReactLogging;
