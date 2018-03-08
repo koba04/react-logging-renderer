@@ -1,0 +1,142 @@
+
+> react-logging-renderer@1.0.0 test /Users/koba04/repos/github.com/koba04/react-logging-renderer
+> babel-node test/index.js
+
+------ Start Flush -------
+[getRootHostContext]
+    type:'getRootHostContext'
+    params:{ rootContainerInstance: {} }
+[getChildHostContext]
+    type:'getChildHostContext'
+    params:{ parentHostContext: { type: 'HostContext' },
+  type: 'div',
+  instance: {} }
+[shouldSetTextContent]
+    type:'shouldSetTextContent'
+    params:{ type: 'div', props: { children: 'foo' } }
+[createTextInstance]
+    type:'createTextInstance'
+    params:{ text: 'foo',
+  rootContainerInstance: {},
+  hostContext: { type: 'HostContext' },
+  internalInstanceHandle: '...' }
+[createInstance]
+    type:'createInstance'
+    params:{ type: 'div',
+  props: { children: 'foo' },
+  rootContainerInstance: {},
+  hostContext: { type: 'HostContext' },
+  internalInstanceHandle: '...' }
+[appendInitialChild]
+    type:'appendInitialChild'
+    params:{ parentInstance: { type: 'Instance' },
+  child: { type: 'TextInstance' } }
+[finalizeInitialChildren]
+    type:'finalizeInitialChildren'
+    params:{ parentInstance: { type: 'Instance' },
+  type: 'div',
+  props: { children: 'foo' },
+  rootContainerInstance: {},
+  hostContext: undefined }
+[prepareForCommit]
+    type:'prepareForCommit'
+    params:{ containerInfo: undefined }
+[appendChildToContainer]
+    type:'appendChildToContainer'
+    params:{ container: {}, child: { type: 'Instance' } }
+[resetAfterCommit]
+    type:'resetAfterCommit'
+    params:{ containerInfo: undefined }
+------ End Flush -------
+------ Start Flush -------
+[getRootHostContext]
+    type:'getRootHostContext'
+    params:{ rootContainerInstance: {} }
+[getChildHostContext]
+    type:'getChildHostContext'
+    params:{ parentHostContext: { type: 'HostContext' },
+  type: 'div',
+  instance: {} }
+[shouldSetTextContent]
+    type:'shouldSetTextContent'
+    params:{ type: 'div', props: { children: 'bar' } }
+[shouldSetTextContent]
+    type:'shouldSetTextContent'
+    params:{ type: 'div', props: { children: 'foo' } }
+[prepareUpdate]
+    type:'prepareUpdate'
+    params:{ instance: { type: 'Instance' },
+  type: 'div',
+  oldProps: { children: 'foo' },
+  newProps: { children: 'bar' },
+  rootContainerInstance: {},
+  hostContext: { type: 'HostContext' } }
+[prepareForCommit]
+    type:'prepareForCommit'
+    params:{ containerInfo: undefined }
+[commitTextUpdate]
+    type:'commitTextUpdate'
+    params:{ textInstance: { type: 'TextInstance' },
+  oldText: 'foo',
+  newText: 'bar' }
+[commitUpdate]
+    type:'commitUpdate'
+    params:{ instance: { type: 'Instance' },
+  updatePayload: {},
+  type: 'div',
+  oldProps: { children: 'foo' },
+  newProps: { children: 'bar' },
+  internalInstanceHandle: '...' }
+[resetAfterCommit]
+    type:'resetAfterCommit'
+    params:{ containerInfo: undefined }
+------ End Flush -------
+------ Start Flush -------
+[getRootHostContext]
+    type:'getRootHostContext'
+    params:{ rootContainerInstance: {} }
+[getChildHostContext]
+    type:'getChildHostContext'
+    params:{ parentHostContext: { type: 'HostContext' },
+  type: 'p',
+  instance: {} }
+[shouldSetTextContent]
+    type:'shouldSetTextContent'
+    params:{ type: 'p', props: { children: 'bar' } }
+[createTextInstance]
+    type:'createTextInstance'
+    params:{ text: 'bar',
+  rootContainerInstance: {},
+  hostContext: { type: 'HostContext' },
+  internalInstanceHandle: '...' }
+[createInstance]
+    type:'createInstance'
+    params:{ type: 'p',
+  props: { children: 'bar' },
+  rootContainerInstance: {},
+  hostContext: { type: 'HostContext' },
+  internalInstanceHandle: '...' }
+[appendInitialChild]
+    type:'appendInitialChild'
+    params:{ parentInstance: { type: 'Instance' },
+  child: { type: 'TextInstance' } }
+[finalizeInitialChildren]
+    type:'finalizeInitialChildren'
+    params:{ parentInstance: { type: 'Instance' },
+  type: 'p',
+  props: { children: 'bar' },
+  rootContainerInstance: {},
+  hostContext: undefined }
+[prepareForCommit]
+    type:'prepareForCommit'
+    params:{ containerInfo: undefined }
+[removeChildFromContainer]
+    type:'removeChildFromContainer'
+    params:{ container: {}, child: { type: 'Instance' } }
+[appendChildToContainer]
+    type:'appendChildToContainer'
+    params:{ container: {}, child: { type: 'Instance' } }
+[resetAfterCommit]
+    type:'resetAfterCommit'
+    params:{ containerInfo: undefined }
+------ End Flush -------
