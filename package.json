@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "flow": "flow check",
-    "test": "babel-node test/index.js"
+    "test": "mocha --require @babel/register test/index-test.js"
   },
   "keywords": [],
   "author": "koba04",
@@ -18,7 +18,9 @@
     "@babel/node": "^7.0.0-beta.40",
     "@babel/preset-flow": "^7.0.0-beta.40",
     "@babel/preset-react": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.49",
     "flow-bin": "^0.66.0",
+    "mocha": "^5.2.0",
     "react": "^16.2.0"
   }
 }
